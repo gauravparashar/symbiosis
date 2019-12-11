@@ -3,8 +3,7 @@
 ## Summary:
 This is a repository of the code to be executed in the class.
 
-## 
-Course Content:
+## Course Content:
 
 | SNo.          | Topic                                         | Classroom Hrs   | Lab Hrs       |
 | ------------- | -------------                                 | -------------   | ------------- |
@@ -15,7 +14,6 @@ Course Content:
 | 5             | Principles of Cloud Computing                 | 2               | 0             |
 | 6             | Hybrid Cloud Management                       | 3               | 2             |
 | 7             | Cloud Web Services                            | 4               | 6             |
-| ------------- |-------------                                  | -------------   | ------------- |
 | Total   |                                               | 21              | 24        | 
 
 
