@@ -5,18 +5,19 @@ This is a repository of the code to be executed in the class.
 
 ## 
 Course Content:
+
+
  
 | SNo.    |   Topic                                       | Classroom Hrs   | Lab Hrs   |
 | ------- | --------------------------------------------- | --------------- | --------- |
 | 1       | Big Data Overview                             | 2               | 0         |
-| 2       | Big Data Analytics in Industry Verticals      | 4               | 0       |
-| 3       | Analytics for Unstructured Data               | 4               | 8       |
-| 4       | The Hadoop Ecosystem                          | 2               | 8       |
-| 5       | Principles of Cloud Computing                 | 2               | 0       |
-| 6       | Hybrid Cloud Management                       | 3               | 2       |
-| 7       | Cloud Web Services                            | 4               | 6       |
-| Total   |                                               | 21              | 24      | 
-
+| 2       | Big Data Analytics in Industry Verticals      | 4               | 0         |
+| 3       | Analytics for Unstructured Data               | 4               | 8         |
+| 4       | The Hadoop Ecosystem                          | 2               | 8         |
+| 5       | Principles of Cloud Computing                 | 2               | 0         |
+| 6       | Hybrid Cloud Management                       | 3               | 2         |
+| 7       | Cloud Web Services                            | 4               | 6         |
+| Total   |                                               | 21              | 24        | 
 
 
 
