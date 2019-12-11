@@ -8,6 +8,7 @@ Course Content:
 
  
 | SNo.  | Topic                                       | Classroom Hrs | Lab Hrs |
+|-------|---------------------------------------------|---------------|---------|
 | 1     | Big Data Overview                           | 2             | 0       |
 | 2     | Big Data Analytics in Industry Verticals    | 4             | 0       |
 | 3     | Analytics for Unstructured Data             | 4             | 8       |
