@@ -1,5 +1,0 @@
-\frametitle{5 Vs of Big Data: Velocity~\ref {iv1}}
-\begin{tikzpicture}[spy using outlines ={magnification=1.7, circle, size=4.5cm, red, connect spies}]
-\node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
-\spy[thick, size=5cm] on (2.6,1.5)  in node at (6,-0.7);
-\end{tikzpicture}
