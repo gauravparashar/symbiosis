@@ -27,4 +27,4 @@ Details on District-wise forest cover for States/Uts. Forest Cover refers to all
 
 https://data.gov.in/resources/land-use-pattern-uttar-pradesh
 
-Download the VM link from here https://drive.google.com/open?id=1IxzTmjbqs_CYo0XyGLsqY6dYgDgrjtQ5
+Download the VM link from here https://drive.google.com/open?id=1490usAfPhmen8qZoYakQQm0bvCcQ6aKH
