@@ -30,6 +30,19 @@ https://data.gov.in/resources/land-use-pattern-uttar-pradesh
 
 Dataset for "Statistics and Social Network of YouTube Videos"
 
+| Column No.     | Name               | Description     |
+| -------------  | -------------      | -------------   |
+| 1.             |  video ID          | an 11-digit string, which is unique                |
+| 2.             |  uploader          |     a string of the video uploader's username          |
+| 3.             |  age               |   an integer number of days between the date when the video was uploaded and Feb.15, 2007 (YouTube's establishment)        |
+| 4.             | category           |  a string of the video category chosen by the uploader        |
+| 5.             | length             |  an integer number of the video length      |
+| 6.             | views              |  an integer number of the views     |
+| 7.             | rate               |  a float number of the video rate             |
+| 8.             | ratings            |  an integer number of the ratings     |
+| 9.             | comments           |  an integer number of the comments      |	
+| 10.            | related IDs        |  up to 20 strings of the related video IDs             |
+
 https://netsg.cs.sfu.ca/youtubedata/
 
 
