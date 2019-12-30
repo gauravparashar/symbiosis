@@ -17,6 +17,9 @@ This is a repository of the code to be executed in the class.
 | Total   |                                               | 21              | 24        | 
 
 
+## Reference Books
+https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf
+
 
 ## Datasets:
 Source: India State of Forest Report, 2011; **Land Use Statistics, Ministry of Agriculture, GOI, 2008-09; Area is in thousands Hectares (ha)
