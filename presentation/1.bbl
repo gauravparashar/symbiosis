@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{tic}
+Investopedia, ``Financial advisory website.''
+\newblock Accessed on 2019-12-06.
+
+\bibitem{GudmundssonH16}
+J.~Gudmundsson and M.~Horton, ``Spatio-temporal analysis of team sports - {A}
+  survey,'' {\em CoRR}, vol.~abs/1602.06994, 2016.
+
+\bibitem{5vs}
+IBM, ``Ibm big data platform - bringing big data to the enterprise.''
+\newblock Accessed on 2019-12-06.
+
+\bibitem{vtata}
+T.~T.~B. Services, ``Big data and the telecom industry.''
+\newblock Accessed on 2019-12-09.
+
+\bibitem{hpy}
+D.~M. Zachary~Radtka, {\em Hadoop with Python}.
+\newblock O' Reilly Media, Inc., 2016.
+
+\bibitem{hdg}
+T.~White, {\em Hadoop: The Definitive Guide}.
+\newblock O' Reilly Media, Inc., 2012.
+
+\end{thebibliography}

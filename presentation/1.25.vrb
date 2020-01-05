@@ -1,0 +1,20 @@
+\frametitle{Telecom}
+
+A telco\cite{vtata} serving 8 million prepaid mobile subscribers
+\begin{enumerate}
+	\item Volume~\ref{vol}: amounting to 11 billion records annually
+	\item Velocity~\ref{vel}:  generates approximate
+30 million CDRs daily
+	\item Value~\ref{val}: \underline{\hspace{3cm}}
+	\item Variability~\ref{var}: \underline{\hspace{3cm}}
+	\item Veracity~\ref{ver}:  \underline{\hspace{3cm}}
+	\item Variety~\ref{vari}:  \underline{\hspace{3cm}}
+
+\end{enumerate}
+
+
+
+\cite{cdr}
+
+
+
