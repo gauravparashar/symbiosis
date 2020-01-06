@@ -1,4 +1,4 @@
-\frametitle{5 Vs of Big Data\cite {5vs}: Volume~\ref {iv1}}
+\frametitle{6 Vs of Big Data\cite {5vs}: Volume~\ref {iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy on (0.2,2.5)  in node at (6,1);

@@ -10,6 +10,7 @@
   frame=single,
   breaklines=true,
   postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  showstringspaces=false,
 }
 \usepackage{xcolor}
 \usepackage{amsfonts}
@@ -152,11 +153,11 @@ Big Data in Sports~\cite{GudmundssonH16}
     \end{figure}
 \end{frame}
 
-\section[5 Vs of Big Data]{5 Vs of Big Data}
+\section[6 Vs of Big Data]{6 Vs of Big Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Volume					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={vol}]{5 Vs of Big Data\cite{5vs}: Volume~\ref{iv1}}
+\begin{frame}[fragile, label={vol}]{6 Vs of Big Data\cite{5vs}: Volume~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy on (0.2,2.5)  in node at (6,1); 
@@ -187,7 +188,7 @@ What is the staring limit of Big Data?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Velocity					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={vel}]{5 Vs of Big Data: Velocity~\ref{iv1}}
+\begin{frame}[fragile, label={vel}]{6 Vs of Big Data: Velocity~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=1.7, circle, size=4.5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy[thick, size=5cm] on (2.6,1.5)  in node at (6,-0.7); 
@@ -195,7 +196,7 @@ What is the staring limit of Big Data?
 \end{frame}
 
 
-\begin{frame}[fragile]{5 Vs of Big Data: Velocity}
+\begin{frame}[fragile]{6 Vs of Big Data: Velocity}
 \begin{figure}[ht]
 	    \begin{center}
         		\includegraphics[height=2.7in]{8.png}
@@ -205,7 +206,7 @@ What is the staring limit of Big Data?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Value					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={val}]{5 Vs of Big Data: Value~\ref{iv1}}
+\begin{frame}[fragile, label={val}]{6 Vs of Big Data: Value~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=4.5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy[thick, size=5cm] on (2.5,-1.2)  in node at (6,1.7); 
@@ -215,7 +216,7 @@ What is the staring limit of Big Data?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Variability					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={var}]{5 Vs of Big Data: Variability~\ref{iv1}}
+\begin{frame}[fragile, label={var}]{6 Vs of Big Data: Variability~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy[thick, size=5cm] on (0.2,-2.2)  in node at (6.1,1.7); 
@@ -225,7 +226,7 @@ What is the staring limit of Big Data?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Veracity					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={ver}]{5 Vs of Big Data: Veracity~\ref{iv1}}
+\begin{frame}[fragile, label={ver}]{6 Vs of Big Data: Veracity~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=4.5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy[thick, size=5.5cm] on (-2.1,-1.2)  in node at (5,1.7); 
@@ -235,7 +236,7 @@ What is the staring limit of Big Data?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %			Variety					%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile, label={vari}]{5 Vs of Big Data: Variety~\ref{iv1}}
+\begin{frame}[fragile, label={vari}]{6 Vs of Big Data: Variety~\ref{iv1}}
 \begin{tikzpicture}[spy using outlines ={magnification=2, circle, size=4.5cm, red, connect spies}]
 \node (h1) at (0,0) {\includegraphics[height=2.9in]{7.png}};
 \spy[thick, size=5cm] on (-2.3,1.2)  in node at (5,1.7); 
@@ -405,46 +406,6 @@ $ hdfs dfs -cat /user/hw.csv
 
 
 
-\section{Python for Hadoop}
-\begin{frame}[fragile]{}
-\emph{Snakebite} is a Python package, created by Spotify, that provides a Python client library, allowing HDFS to be accessed programmatically from Python applications.
-\\
-We can write code to perform to directly interact with Hadoop using python snakebite.
-
-\end{frame}
-
-\subsection{Python for Hadoop}
-\begin{frame}[fragile]{}
-\begin{lstlisting}[language=python]
-from snakebite.client import Client
-client = Client('localhost',9000)
-for x in client.ls(['/']):
-    print(x)
-\end{lstlisting}
-
-\end{frame}
-
-
-\begin{frame}[fragile]{}
-Output:
-\begin{lstlisting}[language=bash]
-$ python directory.py
-{'group': u'supergroup', 'permission': 493, 'file_type': 'd', 'access_time': 0L, 'block_replication': 0, 'modification_time': 1577555408630L, 'length': 0L, 'blocksize': 0L, 'owner': u'hadoop', 'path': '/input'}
-{'group': u'supergroup', 'permission': 493, 'file_type': 'd', 'access_time': 0L, 'block_replication': 0, 'modification_time': 1577558938592L, 'length': 0L, 'blocksize': 0L, 'owner': u'hadoop', 'path': '/output'}
-
-\end{lstlisting}
-\end{frame}
-
-
-\begin{frame}[fragile]{}
-Output:
-\begin{lstlisting}[language=bash]
-{'group': u'supergroup', 'permission': 448, 'file_type': 'd', 'access_time': 0L, 'block_replication': 0, 'modification_time': 1576688626857L, 'length': 0L, 'blocksize': 0L, 'owner': u'hadoop', 'path': '/tmp'}
-{'group': u'supergroup', 'permission': 493, 'file_type': 'd', 'access_time': 0L, 'block_replication': 0, 'modification_time': 1578027777363L, 'length': 0L, 'blocksize': 0L, 'owner': u'hadoop', 'path': '/user'}
-\end{lstlisting}
-\end{frame}
-
-
 \section{MapReduce}
 \begin{frame}[fragile]{}
 MapReduce is a programming model that enables large volumes of data to be processed and generated by dividing work into independent tasks and executing the tasks in parallel across a cluster of machines.
@@ -455,6 +416,145 @@ MapReduce is a programming model that enables large volumes of data to be proces
     \end{center}
     \caption{MapReduce logical data flow\cite{hdg}}
     \end{figure}
+\end{frame}
+
+
+
+\section{Python}
+\begin{frame}[fragile]{Word Count Example - Prerequisite}
+	\begin{itemize}
+	\item sys module
+	: A file containing a set of functions you want to include in your application.
+\begin{lstlisting}[language=python]
+import sys
+\end{lstlisting}		
+	\item for loop
+	: A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+\begin{lstlisting}[language=python]
+students = ["Aman", "Anita", "Cherry"] 
+for student in students: 
+	print(student)
+\end{lstlisting}
+	\item  lists : List is a collection which is ordered and changeable. Allows duplicate members
+\begin{lstlisting}[language=python]
+students = ["Aman", "Anita", "Cherry"] 	
+\end{lstlisting}	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Word Count Example - Prerequisite}
+\begin{itemize}
+	\item print : The print() function prints the specified message to the screen, or other standard output device.
+\begin{lstlisting}[language=python]
+	print "%s\t%s" %("Hello", "how are you?")
+	print '{0}\t{1}'.format("Hello", "how are you?")
+\end{lstlisting}
+
+	\item split : split(separator) function returns a list of strings after breaking the given string by the specified separator.
+
+\begin{lstlisting}[language=python]
+	line = "Mary had alittle lamb"
+	print (line.split(" "))
+\end{lstlisting}
+
+\end{itemize}		
+\end{frame}
+
+
+\begin{frame}[fragile]{Word Count Example - Prerequisite}
+\begin{itemize}
+	\item dictionary : Dictionary is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. 
+\begin{lstlisting}[language=python]
+# Creating an empty Dictionary 
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+  
+# Creating a Dictionary with Integer Keys 
+Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'} 
+print("\nDictionary with the use of Integer Keys: ") 
+print(Dict) 
+
+\end{lstlisting}
+\end{itemize}		
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Python Hadoop: Final Mapper code}
+\begin{lstlisting}[language=bash]
+for line in sys.stdin:
+    line =  line.strip() # Remove the leading and trailing spaces
+    words =  line.split() # Split the line on space
+    for word in words:
+         print "%s\t%s" %(word,1) # you can use this method or
+         print '{0}\t{1}'.format(word, 1) #this method
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Python Hadoop: Final Mapper output}
+\begin{lstlisting}[language=bash]
+
+$ echo Hello world. I am an Indian. and I love my country | python mapper.py 
+
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=bash]
+Hello   1
+world.  1
+I       1
+am      1
+an      1
+Indian. 1
+and     1
+I       1
+love    1
+my      1
+country 1
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Python Hadoop: Final Reducer code}
+\begin{lstlisting}[language=bash]
+import sys
+w = {}
+# Process each key-value pair from the mapper
+for line in sys.stdin:
+    # Get the key and value from the current line
+    word, count = line.split('\t')
+    # Convert the count to an int
+    count = int(count)
+    if word in w:
+        w[word] = w[word] + count
+    else:
+        w[word] = count
+
+for word in w.keys():
+    print "%s\t%s" %(word,w[word])
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Python Hadoop: Final Reducer output}
+\begin{lstlisting}[language=bash]
+
+$ echo Hello world. I am an Indian. and I love my country | python mapper.py | python reducer.py
+
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=bash]
+and     1
+love    1
+I       2
+my      1
+am      1
+an      1
+Indian. 1
+country 1
+world.  1
+Hello   1
+\end{lstlisting}
 \end{frame}
 
 
