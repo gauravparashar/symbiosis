@@ -5,7 +5,7 @@
 %\usepackage{rsislidepacks}
 \usepackage{listings}
 \lstset{
-  basicstyle=\ttfamily,
+  basicstyle=\small,
   columns=fullflexible,
   frame=single,
   breaklines=true,
@@ -482,7 +482,7 @@ print(Dict)
 
 
 \begin{frame}[fragile]{Python Hadoop: Final Mapper code}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=python]
 for line in sys.stdin:
     line =  line.strip() # Remove the leading and trailing spaces
     words =  line.split() # Split the line on space
@@ -494,9 +494,7 @@ for line in sys.stdin:
 
 \begin{frame}[fragile]{Python Hadoop: Final Mapper output}
 \begin{lstlisting}[language=bash]
-
 $ echo Hello world. I am an Indian. and I love my country | python mapper.py 
-
 \end{lstlisting}
 Output:
 \begin{lstlisting}[language=bash]
@@ -515,7 +513,7 @@ country 1
 \end{frame}
 
 \begin{frame}[fragile]{Python Hadoop: Final Reducer code}
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=python]
 import sys
 w = {}
 # Process each key-value pair from the mapper
@@ -538,9 +536,7 @@ for word in w.keys():
 
 \begin{frame}[fragile]{Python Hadoop: Final Reducer output}
 \begin{lstlisting}[language=bash]
-
 $ echo Hello world. I am an Indian. and I love my country | python mapper.py | python reducer.py
-
 \end{lstlisting}
 Output:
 \begin{lstlisting}[language=bash]
@@ -556,6 +552,35 @@ world.  1
 Hello   1
 \end{lstlisting}
 \end{frame}
+
+
+\begin{frame}[fragile]{Python Hadoop: Final Execution on Hadoop}
+\begin{lstlisting}[language=bash]
+$ hdfs dfs -put code/first_code/data.txt /input
+mapred streaming -input /input/data.txt  -output /output/ -file ~/symbiosis/code/first_code/mapper.py -mapper ~/symbiosis/code/first_code/mapper.py -file ~/symbiosis/code/first_code/reducer.py -reducer ~/symbiosis/code/first_code/reducer.py
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Python Hadoop: Final Execution on Hadoop}
+\begin{lstlisting}[language=bash]
+$ hdfs dfs -ls /output/
+Found 2 items
+-rw-r--r--   1 hadoop supergroup 0 2020-01-07 11:59 /output/_SUCCESS
+-rw-r--r--   1 hadoop supergroup 69 2020-01-07 11:59 /output/part-00000
+$hdfs dfs -cat /output/*
+and     1
+love    1
+I       2
+country 1
+am      1
+an      1
+Indian. 1
+my      1
+Hello   1
+world.  1
+\end{lstlisting}
+\end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
