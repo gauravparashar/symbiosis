@@ -421,6 +421,7 @@ MapReduce is a programming model that enables large volumes of data to be proces
 
 
 \section{Python}
+\subsection{Word Count Example}
 \begin{frame}[fragile]{Word Count Example - Prerequisite}
 	\begin{itemize}
 	\item sys module
@@ -512,6 +513,7 @@ country 1
 \end{lstlisting}
 \end{frame}
 
+
 \begin{frame}[fragile]{Python Hadoop: Final Reducer code}
 \begin{lstlisting}[language=python]
 import sys
@@ -581,6 +583,32 @@ world.  1
 \end{lstlisting}
 \end{frame}
 
+
+\subsection{Airline Example}
+\begin{frame}[fragile]{Dataset: Airline}
+Question: Find list of Airports operating in the Country India
+\\
+Data set: airports\_mod.dat
+
+\begin{lstlisting}[language=bash]
+1,Goroka,Goroka,Papua New Guinea,GKA,AYGA,-6.081689,145.391881,5282,10,U,Pacific/Port_Moresby
+2,Madang,Madang,Papua New Guinea,MAG,AYMD,-5.207083,145.7887,20,10,U,Pacific/Port_Moresby
+\end{lstlisting}
+Write the Mapper code for it
+\end{frame}
+
+\begin{frame}[fragile]{Dataset: Airline}
+Question: Find list of Airports operating in the Country India
+\begin{lstlisting}[language=python]
+import sys
+lst = []
+for line in sys.stdin:
+    line = line.strip()
+    lst = line.split(',')
+    if lst[3] == 'India':
+        print "%s" %(lst[0]) 
+\end{lstlisting}
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
