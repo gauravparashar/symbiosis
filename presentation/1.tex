@@ -467,18 +467,46 @@ students = ["Aman", "Anita", "Cherry"]
 	\item dictionary : Dictionary is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. 
 \begin{lstlisting}[language=python]
 # Creating an empty Dictionary 
-Dict = {} 
-print("Empty Dictionary: ") 
-print(Dict) 
+d = {} 
+print(d) 
   
-# Creating a Dictionary with Integer Keys 
-Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'} 
-print("\nDictionary with the use of Integer Keys: ") 
-print(Dict) 
+#Adding values in dictionary in Key:Value pair
+d = {"zero":0 , "one":1 , "two":2 , "three":3 , "four" :4, "five":5, "six":6, "seven":7, "eight":8, "nine":9 }
+
+#Print all the keys
+print(d.keys())
+
+#Print all the values
+pront(d.values())
+\end{lstlisting}
+\end{itemize}		
+\end{frame}
+
+\begin{frame}[fragile]{Word Count Example - Prerequisite}
+\begin{itemize}
+	\item if condition :
+		if condition :
+\\			True part
+\\		else:
+\\\			False part
+		  
+\begin{lstlisting}[language=python]
+d = {} 
+#Adding values in dictionary in Key:Value pair
+d = {"zero":0 , "one":1 , "two":2 , "three":3 , "four" :4, "five":5, "six":6, "seven":7, "eight":8, "nine":9 }
+
+x = "nine"
+
+if  x in d:
+	print ("Found")
+else:
+	print ("Not Found")
 
 \end{lstlisting}
 \end{itemize}		
 \end{frame}
+
+
 
 
 
@@ -559,7 +587,13 @@ Hello   1
 \begin{frame}[fragile]{Python Hadoop: Final Execution on Hadoop}
 \begin{lstlisting}[language=bash]
 $ hdfs dfs -put code/first_code/data.txt /input
-mapred streaming -input /input/data.txt  -output /output/ -file ~/symbiosis/code/first_code/mapper.py -mapper ~/symbiosis/code/first_code/mapper.py -file ~/symbiosis/code/first_code/reducer.py -reducer ~/symbiosis/code/first_code/reducer.py
+$ mapred streaming \
+-input /input/data.txt \ 
+-output /output/ \
+-file ~/symbiosis/code/first_code/mapper.py \
+-mapper ~/symbiosis/code/first_code/mapper.py \
+-file ~/symbiosis/code/first_code/reducer.py \
+-reducer ~/symbiosis/code/first_code/reducer.py 
 \end{lstlisting}
 \end{frame}
 
