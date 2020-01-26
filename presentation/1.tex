@@ -12,6 +12,13 @@
   postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
   showstringspaces=false,
 }
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
 \usepackage{xcolor}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -35,7 +42,7 @@
 	\thispagestyle{empty}
 	\titlepage
 \end{frame}
-\addtocounter{framenumber}{-1}
+%\addtocounter{framenumber}{-1}
 \tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -438,9 +445,9 @@ for student in students:
 \end{lstlisting}
 	\item  lists : List is a collection which is ordered and changeable. Allows duplicate members
 \begin{lstlisting}[language=python]
-students = ["Aman", "Anita", "Cherry"] 	
+students = ["Aman", "Anita", "Cherry"] 
 \end{lstlisting}	
-	\end{itemize}
+\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Word Count Example - Prerequisite}
@@ -477,7 +484,7 @@ d = {"zero":0 , "one":1 , "two":2 , "three":3 , "four" :4, "five":5, "six":6, "s
 print(d.keys())
 
 #Print all the values
-pront(d.values())
+print(d.values())
 \end{lstlisting}
 \end{itemize}		
 \end{frame}
@@ -506,12 +513,13 @@ else:
 \end{itemize}		
 \end{frame}
 
-
-
-
-
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+%%%%%%		%%%%%%
+%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]{Python Hadoop: Final Mapper code}
 \begin{lstlisting}[language=python]
+import sys
 for line in sys.stdin:
     line =  line.strip() # Remove the leading and trailing spaces
     words =  line.split() # Split the line on space
@@ -631,20 +639,34 @@ Data set: airports\_mod.dat
 Write the Mapper code for it
 \end{frame}
 
-\begin{frame}[fragile]{Dataset: Airline}
+\begin{frame}[fragile]{Dataset: Airline (Mapper)}
 Question: Find list of Airports operating in the Country India
 \begin{lstlisting}[language=python]
 import sys
 lst = []
 for line in sys.stdin:
-    line = line.strip()
-    lst = line.split(',')
-    if lst[3] == 'India':
-        print "%s" %(lst[0]) 
-\end{lstlisting}
+        line = line.strip()
+        lst = line.split(',')
+        print "%s\t%s" %(lst[0],lst[3])\end{lstlisting}
 \end{frame}
 
 
+\begin{frame}[fragile]{Dataset: Airline (Reducer)}
+Question: Find list of Airports operating in the Country India
+\begin{lstlisting}[language=python]
+
+#!/usr/bin/python
+import sys
+
+lst = []
+for line in sys.stdin:
+        line = line.strip()
+        lst = line.split('\t')
+
+        if (lst[1]=="India"):
+                print "%s\t%s" %(lst[0],lst[1])
+\end{lstlisting}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

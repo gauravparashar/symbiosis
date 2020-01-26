@@ -20,6 +20,10 @@ This is a repository of the code to be executed in the class.
 ## Reference Books
 https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf
 
+## For Visualizations we will use Anaconda
+Download anaconda for Python 3.7 and choose your own distribution from here: https://www.anaconda.com/distribution/
+
+
 
 ## Datasets:
 Source: India State of Forest Report, 2011; **Land Use Statistics, Ministry of Agriculture, GOI, 2008-09; Area is in thousands Hectares (ha)

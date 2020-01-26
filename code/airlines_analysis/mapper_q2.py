@@ -1,8 +1,8 @@
+#!/usr/bin/python
+#Find the list of Airlines having zero stops
 import sys
 lst = []
 for line in sys.stdin:
-    line = line.strip()
-    lst = line.split(',')
-    stop = int(lst[7])
-    if stop == 0 :
-        print "%s \t %d" %(lst[0],stop)
+	line = line.strip()
+    	lst = line.split(',')
+	print "%s\t%s" %(lst[1],lst[7])
