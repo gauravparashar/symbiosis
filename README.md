@@ -57,4 +57,3 @@ https://netsg.cs.sfu.ca/youtubedata/
 https://www.tatateleservices.com/downloads/WhitePapers/resources/Big-Data-and-the-Telecom-Industry.pdf
 
 
-Download the VM link from here https://drive.google.com/open?id=1490usAfPhmen8qZoYakQQm0bvCcQ6aKH
