@@ -1,0 +1,98 @@
+Institute     	  	:	SYMBIOSIS CENTRE FOR MANAGEMENT STUDIES, NOIDA
+Programme   			:	BBA
+Batch					:	2018-2021
+Semester      	   	: 	IV
+Course					:	Cloud and Big Data  
+Course Code			:	T2683  
+Component Name		: 	Internal Test
+Day & Date of Test	:	13-02-2020	           			                                                    
+Test Duration			:  	60 Minutes					 		Maximum Marks: 15         
+
+Instructions to the Candidates:
+________________________________________________________________________________
+1. Write your name with your roll number in a file.
+	1. $ touch yourname.rollnumber
+		Eg: Your Name is Amit Srinivasan
+		    Your Roll Number is 18021021000
+		
+		Then do this:-
+		$ touch amit.srinivasan.18021021000
+		Type $ ls to see if the file has been correctly created or not?
+
+		$ ls 
+
+		$ amit.srinivasan.18021021000
+
+2. All your mappers and reducers must be written in the following format:
+	$ nano mapper_q1.py
+	$ nano mapper_q2.py
+	$ nano reducer_q1.py
+	$ nano reducer_q2.py 
+
+
+3. After you have saved all your code do check by using $ ls command, that you have solved all the questions.
+
+4. Write the final code in the answer sheet provided to you.
+
+5. Dataset :1080.txt , 2701-0.txt , temp.csv
+
+	Hint: For execution follow the steps:
+	1. $ cat 1080-0.txt | head 						:To display the dataset
+	2. $ cat 1080-0.txt | python mapper.py 		:To display the word with count 
+
+		Output: 
+			The	1
+			Project	1
+			Gutenberg	1			
+			Ebook	1
+			of	1
+
+	3. $ cat 1080-0.txt | python mapper_q1.py | python reducer_q1.py	:To run the code
+
+6. Do any two questions from given 4 questions.
+
+7. Write mapper and reducer for all the questions.
+
+8. Virtual Machine to be used is Exam_VM
+
+9. Marks distribution: 
+		Marks					Component
+		2.5						Mapper
+		2.5						Reducer
+		2.5						Executed them or not
+________________________________________________________________________________
+
+									Questions
+
+________________________________________________________________________________
+
+Q1. Count the number of words in the book and display the total count of words.																Marks: (2.5 * 2 + 2.5)
+
+
+Q2. Find which country the story from?							
+																Marks: (2.5 * 2 + 2.5)
+	Hint: Use countries as India, Afghanistan, Angola, Ireland, France?
+	Hint: Do not use strip in reducer.
+	Hint: Use the following method to match multiple countries.
+ 
+		    if country == 'India':
+			print("Story is based in India")
+		    
+		    if country == 'Afghanistan':
+			print("Story is based in Afghanistan")
+		    
+	Output:
+		Story is based in _________
+
+Q3. Find the author of the books using 1080.txt & 2701-0.txt dataset?			  																Marks: (2.5 * 2 + 2.5)
+
+Q4. The temperature dataset temp.csv contains data in the following format:		  															Marks: (2.5 * 2 + 2.5)
+    "YEAR","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"
+
+    Find the Year which has minimum temperature in February.
+
+________________________________________________________________________________
+
+				BEST OF LUCK
+
+________________________________________________________________________________
