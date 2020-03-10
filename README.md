@@ -60,3 +60,5 @@ https://www.tatateleservices.com/downloads/WhitePapers/resources/Big-Data-and-th
 2. https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?&eventid=1638863&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=20E0FA32E42181D81EF3C47089ADB0AF&newConsole=false&nxChe=false&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=275170966&contenttype=A&mediametricsessionid=230456274&mediametricid=2343496&usercd=275170966&mode=launch
 
 3. https://www.scribd.com/document/50992268/Kyne-Tix-Cloud-Computing-Strategy-Guide
+4. https://www.icmrindia.org/casestudies/catalogue/IT%20and%20Systems/ITSY077.htm
+5. https://practice.geeksforgeeks.org/problems/difference-between-cloud-and-big-data
