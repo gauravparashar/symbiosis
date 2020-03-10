@@ -53,7 +53,11 @@ Dataset for "Statistics and Social Network of YouTube Videos"
 https://netsg.cs.sfu.ca/youtubedata/
 
 ## Home Work Question 1:Telecom
-
 https://www.tatateleservices.com/downloads/WhitePapers/resources/Big-Data-and-the-Telecom-Industry.pdf
+
+## Cloud Computing  
+https://www.researchgate.net/publication/304418741_Application_of_cloud_computing_services_in_business
+https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?&eventid=1638863&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=20E0FA32E42181D81EF3C47089ADB0AF&newConsole=false&nxChe=false&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=275170966&contenttype=A&mediametricsessionid=230456274&mediametricid=2343496&usercd=275170966&mode=launch
+https://www.scribd.com/document/50992268/Kyne-Tix-Cloud-Computing-Strategy-Guide
 
 
